@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>横向无缝滚动图片JS代码</title>
+	<link rel="stylesheet" href="css/css.css"/>
+</head>
+<body>
+<div align="center">
+	<!--滚动图片 start-->
+	<div class="rollphotos">
+		<div class="FixTitle">
+			<h3>开幕式回顾</h3>
+			<span>
+				<a href="javascript:void(0);">更多&gt;&gt;</a>
+			</span>
+		</div>
+
+		<div class=blk_29>
+			<div class=LeftBotton id=LeftArr></div>
+			<div class=Cont id=ISL_Cont_1>
+				<!-- 图片列表 begin -->
+				<div class=box>
+					<a class=imgBorder href="javascript:void(0);" target=_blank>
+						<img height=84 alt="酷站代码" src="images/U2716P6T64D51897F1328DT20080906234338.jpg" width=124 border=0>
+					</a>
+					<p>
+						<a href="javascript:void(0);" target=_blank>开幕式火炬传递</a>
+					</p>
+				</div>
+				<div class=box>
+					<a class=imgBorder href="javascript:void(0);" target=_blank>
+						<img height=84 alt="酷站代码" src="images/U2716P6T64D51897F1322DT20080906204943.jpg" width=124 border=0>
+					</a>
+					<p>
+						<a href="javascript:void(0);" target=_blank>开幕式精彩瞬间</a>
+					</p>
+				</div>
+				<div class=box>
+					<a class=imgBorder href="javascript:void(0);" target=_blank>
+						<img height=84 alt="酷站代码" src="images/U2716P6T64D51897F1323DT20080906204943.jpg" width=124 border=0>
+					</a>
+					<p>
+						<a href="javascript:void(0);" target=_blank>卡通玩偶组成会徽</a>
+					</p>
+				</div>
+				<div class=box>
+					<a class=imgBorder href="javascript:void(0);" target=_blank>
+						<img height=84 alt="酷站代码" src="images/U2716P6T64D51897F1324DT20080906205503.jpg" width=124 border=0>
+					</a>
+					<p>
+						<a href="javascript:void(0);" target=_blank>开幕式焰火表演</a>
+					</p>
+				</div>
+				<div class=box>
+					<a class=imgBorder href="javascript:void(0);" target=_blank>
+						<img height=84 alt="酷站代码" src="images/U2716P6T64D51897F1327DT20080906220904.jpg" width=124 border=0>
+					</a>
+					<p>
+						<a href="javascript:void(0);" target=_blank>中国代表团入场</a>
+					</p>
+				</div>
+				<div class=box>
+					<a class=imgBorder href="javascript:void(0);" target=_blank>
+						<img height=84 alt="酷站代码" src="images/U2716P6T64D51897F1325DT20080906205624.jpg" width=124 border=0>
+					</a>
+					<p>
+						<a href="javascript:void(0);" target=_blank>各代表团入场</a>
+					</p>
+				</div>
+				<div class=box>
+					<a class=imgBorder href="javascript:void(0);" target=_blank>
+						<img height=84 alt="酷站代码" src="images/U2716P6T64D51897F1094DT20080906194732.jpg" width=124 border=0>
+					</a>
+					<p>
+						<a href="javascript:void(0);" target=_blank>开幕式暖场表演</a>
+					</p>
+				</div>
+				<div class=box>
+					<a class=imgBorder href="javascript:void(0);" target=_blank>
+						<img height=84 alt="酷站代码" src="images/U2716P6T64D51897F1091DT20080906180505.jpg" width=124 border=0>
+					</a>
+					<p>
+						<a href="javascript:void(0);" target=_blank>开幕式即将举行</a>
+					</p>
+				</div>
+				<!-- 图片列表 end --></div>
+			<div class=RightBotton id=RightArr></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script src="js/ScrollPic.js"></script>
+<script>
+	var scrollPic_02 = new ScrollPic();
+	scrollPic_02.scrollContId   = "ISL_Cont_1"; //内容容器ID
+	scrollPic_02.arrLeftId      = "LeftArr";//左箭头ID
+	scrollPic_02.arrRightId     = "RightArr"; //右箭头ID
+
+	scrollPic_02.frameWidth     = 908;//显示框宽度
+	scrollPic_02.pageWidth      = 152; //翻页宽度
+
+	scrollPic_02.speed          = 10; //移动速度(单位毫秒，越小越快)
+	scrollPic_02.space          = 10; //每次移动像素(单位px，越大越快)
+	scrollPic_02.autoPlay       = false; //自动播放
+	scrollPic_02.autoPlayTime   = 3; //自动播放间隔时间(秒)
+
+	scrollPic_02.initialize(); //初始化
+</script>
+
